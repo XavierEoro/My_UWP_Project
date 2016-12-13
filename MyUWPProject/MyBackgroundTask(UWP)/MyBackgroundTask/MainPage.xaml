@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="MyBackgroundTask.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyBackgroundTask"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0 30 0 0">
+        <Button Content="register" Click="Button_Click" x:Name="registerBtn"></Button>
+        <Button Content="unRegister" Click="Button_Click_1" x:Name="UnregisterBtn"></Button>
+        <TextBlock x:Name="txbprogress"></TextBlock>
+        <TextBlock x:Name="txbStatus"></TextBlock>
+    </StackPanel>
+</Page>

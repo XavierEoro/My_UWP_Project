@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollViewHerder", "ScrollViewHerder\ScrollViewHerder.csproj", "{F407D7FD-586C-4C02-988D-6DEA8659F492}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBackgroundTask", "MyBackgroundTask\MyBackgroundTask.csproj", "{D29158FB-9E4B-4B2B-8129-7D7072885B7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBackgroundTask", "MyBackgroundTask(UWP)\MyBackgroundTask\MyBackgroundTask.csproj", "{D29158FB-9E4B-4B2B-8129-7D7072885B7A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBackgroundTaskSample", "MyBackgroundTask(UWP)\MyBackgroundTaskSample\MyBackgroundTaskSample.csproj", "{6692A930-2DC5-42E5-B0EF-FA38ADE3E3B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBackgroundTaskSample", "MyBackgroundTaskSample\MyBackgroundTaskSample.csproj", "{6692A930-2DC5-42E5-B0EF-FA38ADE3E3B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,26 +19,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|ARM.ActiveCfg = Debug|ARM
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|ARM.Build.0 = Debug|ARM
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|ARM.Deploy.0 = Debug|ARM
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|x64.ActiveCfg = Debug|x64
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|x64.Build.0 = Debug|x64
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|x64.Deploy.0 = Debug|x64
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|x86.ActiveCfg = Debug|x86
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|x86.Build.0 = Debug|x86
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Debug|x86.Deploy.0 = Debug|x86
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|Any CPU.ActiveCfg = Release|x86
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|ARM.ActiveCfg = Release|ARM
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|ARM.Build.0 = Release|ARM
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|ARM.Deploy.0 = Release|ARM
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|x64.ActiveCfg = Release|x64
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|x64.Build.0 = Release|x64
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|x64.Deploy.0 = Release|x64
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|x86.ActiveCfg = Release|x86
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|x86.Build.0 = Release|x86
-		{F407D7FD-586C-4C02-988D-6DEA8659F492}.Release|x86.Deploy.0 = Release|x86
 		{D29158FB-9E4B-4B2B-8129-7D7072885B7A}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{D29158FB-9E4B-4B2B-8129-7D7072885B7A}.Debug|ARM.ActiveCfg = Debug|ARM
 		{D29158FB-9E4B-4B2B-8129-7D7072885B7A}.Debug|ARM.Build.0 = Debug|ARM
