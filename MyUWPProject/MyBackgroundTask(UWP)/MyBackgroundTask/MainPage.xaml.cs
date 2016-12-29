@@ -65,8 +65,8 @@ namespace MyBackgroundTask
             //    await new MessageDialog("您已禁用后台任务或后台任务数量已达最大!").ShowAsync();
             //}
 
-            IBackgroundTrigger m_BKTaskTrigger = new TimeTrigger(15, false);
-            IBackgroundTrigger m_BKTaskTrigger2 = new TimeTrigger(18, false);
+            IBackgroundTrigger m_BKTaskTrigger = new SystemTrigger(SystemTriggerType.TimeZoneChange,false);
+            IBackgroundTrigger m_BKTaskTrigger2 = new TimeTrigger(15, false);
             
 
             var triggers = new List<IBackgroundTrigger> { m_BKTaskTrigger, m_BKTaskTrigger2 };
