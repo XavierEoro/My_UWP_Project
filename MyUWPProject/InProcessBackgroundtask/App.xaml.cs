@@ -1,14 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.ApplicationModel.Core;
+using Windows.Data.Xml.Dom;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -17,7 +17,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace SqliteCore
+namespace InProcessBackgroundtask
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -32,11 +32,7 @@ namespace SqliteCore
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-
-            using (var db = new BloggingContext())
-            {
-                db.Database.Migrate();
-            }
+            
         }
 
         /// <summary>
@@ -83,8 +79,6 @@ namespace SqliteCore
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
-
-                
             }
         }
 
@@ -110,6 +104,31 @@ namespace SqliteCore
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+
+        protected override void OnBackgroundActivated(BackgroundActivatedEventArgs args)
+        {
+            base.OnBackgroundActivated(args);
+            string xml = $@"<toast>
+    <visual>
+        <binding template='ToastGeneric'>
+            <text>Email Audio Toast</text>
+            <text>This toast's audio uses one of the system-provided sounds: Notification.Mail</text>
+        </binding>
+    </visual>
+
+    <audio src='ms-appdata:///temp/ToastAudio'/>
+
+</toast>";
+            PushAudioToast(xml);
+        }
+
+        private void PushAudioToast(string xml)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(xml);
+            var toast = new ToastNotification(doc);
+            ToastNotificationManager.CreateToastNotifier().Show(toast);
         }
     }
 }

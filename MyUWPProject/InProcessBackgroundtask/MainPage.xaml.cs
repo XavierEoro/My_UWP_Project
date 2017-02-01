@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Background;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.Media.Playback;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace SqliteCore
+namespace InProcessBackgroundtask
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -26,29 +26,18 @@ namespace SqliteCore
         public MainPage()
         {
             this.InitializeComponent();
-           
         }
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            using (var db = new BloggingContext())
-            {
-                Blogs.ItemsSource = db.Blogs.ToList();
-            }
+            var builder = new BackgroundTaskBuilder();
+            builder.Name = "My Background Trigger";
+            builder.SetTrigger(new SystemTrigger(SystemTriggerType.TimeZoneChange, false));
+            // Do not set builder.TaskEntryPoint for in-process background tasks
+            // Here we register the task and work will start based on the time trigger.
+            BackgroundTaskRegistration task = builder.Register();
         }
 
-        private void Add_Click(object sender, RoutedEventArgs e)
-        {
-            int id = 12;
-            using (var db = new BloggingContext())
-            {
-                
-                var blog = new Blog { Url = NewBlogUrl.Text,BlogId=id };
-                db.Blogs.Add(blog);
-                db.SaveChanges();
-
-                var b = db.Blogs.FirstOrDefault(x => (x.BlogId == id));
-            }
-        }
+        
     }
 }
