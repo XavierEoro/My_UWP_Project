@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteCore", "SqliteCore\Sq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InProcessBackgroundtask", "InProcessBackgroundtask\InProcessBackgroundtask.csproj", "{1A6C347A-8F02-4453-84A0-E80DE35785E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coding4Fun", "Coding4Fun\Coding4Fun.csproj", "{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,26 @@ Global
 		{1A6C347A-8F02-4453-84A0-E80DE35785E5}.Release|x86.ActiveCfg = Release|x86
 		{1A6C347A-8F02-4453-84A0-E80DE35785E5}.Release|x86.Build.0 = Release|x86
 		{1A6C347A-8F02-4453-84A0-E80DE35785E5}.Release|x86.Deploy.0 = Release|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|ARM.Build.0 = Debug|ARM
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|ARM.Deploy.0 = Debug|ARM
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|x64.ActiveCfg = Debug|x64
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|x64.Build.0 = Debug|x64
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|x64.Deploy.0 = Debug|x64
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|x86.ActiveCfg = Debug|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|x86.Build.0 = Debug|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Debug|x86.Deploy.0 = Debug|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|Any CPU.ActiveCfg = Release|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|ARM.ActiveCfg = Release|ARM
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|ARM.Build.0 = Release|ARM
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|ARM.Deploy.0 = Release|ARM
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|x64.ActiveCfg = Release|x64
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|x64.Build.0 = Release|x64
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|x64.Deploy.0 = Release|x64
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|x86.ActiveCfg = Release|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|x86.Build.0 = Release|x86
+		{DBDF5288-95DF-41EC-BD62-7F60CD7F2A33}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
