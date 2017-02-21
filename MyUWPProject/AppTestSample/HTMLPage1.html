@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function HtmlGetAppVersion() {
+
+        if (window.SCObject) { //this is true
+            var version = window.SCObject.getAppVersion(); //error occurs here
+            alert("Version: " + version);
+            document.getElementById('lable').innerHTML = version;
+        }
+
+    }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="HtmlGetAppVersion();" value="get version" /><br />
+    <label id="lable"></label>
+</body>
+</html>
