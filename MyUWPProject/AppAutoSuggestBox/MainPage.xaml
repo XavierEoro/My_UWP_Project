@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="AppAutoSuggestBox.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppAutoSuggestBox"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+
+        
+        <Style x:Key="AutoSuggestBoxStyle1" TargetType="AutoSuggestBox">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="AutoSuggestBox">
+                        <Grid x:Name="LayoutRoot" Background="{TemplateBinding Background}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="Orientation">
+                                    <VisualState x:Name="Landscape"/>
+                                    <VisualState x:Name="Portrait"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <TextBox x:Name="TextBox" Background="Transparent" ScrollViewer.BringIntoViewOnFocusChange="False" DesiredCandidateWindowAlignment="BottomEdge" Header="{TemplateBinding Header}" Margin="0" PlaceholderText="{TemplateBinding PlaceholderText}"  Width="{TemplateBinding Width}" Canvas.ZIndex="0"/>
+                            <Popup x:Name="SuggestionsPopup">
+                                <Border x:Name="SuggestionsContainer">
+                                    <Border.RenderTransform>
+                                        <TranslateTransform x:Name="UpwardTransform"/>
+                                    </Border.RenderTransform>
+                                    <ListView x:Name="SuggestionsList" BorderBrush="{ThemeResource AutoSuggestBoxSuggestionsListBorderBrush}" BorderThickness="{ThemeResource AutoSuggestListBorderThemeThickness}" Background="{ThemeResource AutoSuggestBoxSuggestionsListBackground}" DisplayMemberPath="{TemplateBinding DisplayMemberPath}" IsItemClickEnabled="True" ItemTemplate="{TemplateBinding ItemTemplate}" ItemContainerStyle="{TemplateBinding ItemContainerStyle}" ItemTemplateSelector="{TemplateBinding ItemTemplateSelector}" MaxHeight="{ThemeResource AutoSuggestListMaxHeight}" Margin="{ThemeResource AutoSuggestListMargin}" Padding="{ThemeResource AutoSuggestListPadding}">
+                                        <ListView.ItemContainerTransitions>
+                                            <TransitionCollection/>
+                                        </ListView.ItemContainerTransitions>
+                                    </ListView>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Storyboard x:Name="MyStoryBoard">
+            <ColorAnimation Storyboard.TargetName="autoSuggestBox" Storyboard.TargetProperty="(AutoSuggestBox.Background).(SolidColorBrush.Color)" 
+                     From="Red" To="Blue" Duration="0:0:4" AutoReverse="True"/>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <AutoSuggestBox x:Name="autoSuggestBox" Background="Transparent" Style="{StaticResource AutoSuggestBoxStyle1}"></AutoSuggestBox>
+        <Button x:Name="btn" Content="test" Click="Button_Click" Margin="0 50 0 0"></Button>
+    </Grid>
+</Page>
