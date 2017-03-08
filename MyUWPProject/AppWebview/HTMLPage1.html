@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+
+        function detectContent()
+        {
+            var target = document.getElementById('div');
+
+            var observer = new MutationObserver(function (mutations) {
+                mutations.forEach(function (mutation) {
+                    window.external.notify('div changed');
+                    update("div changed");
+                });
+            });
+            var config = { attributes: true, childList: true, characterData: true };
+            observer.observe(target, config);
+        }
+
+        function update(e)
+        {
+            var div = document.getElementById("div");
+            div.innerHTML = e;
+        }
+    </script>
+</head>
+<body onload="detectContent();">
+    <div id="div" style="margin-top:100px;"></div>
+    <br />
+    <input value="update" onclick="update('abc');" type="button"/>
+</body>
+</html>
