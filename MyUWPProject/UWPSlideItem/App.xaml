@@ -10,5 +10,7 @@
                 <ResourceDictionary Source="SlidableListItem.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+
+        
     </Application.Resources>
 </Application>

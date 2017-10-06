@@ -236,6 +236,8 @@ namespace UWPSlideItem
                 RightCommandRequested?.Invoke(this, EventArgs.Empty);
                 RightCommand?.Execute(RightCommandParameter);
             }
+
+            Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => { SwipeStatus = SwipeStatus.Idle; }).AsTask();
         }
 
         private void _leftCommandPanel_Tapped(object sender, TappedRoutedEventArgs e)
@@ -245,6 +247,7 @@ namespace UWPSlideItem
                 LeftCommandRequested?.Invoke(this, EventArgs.Empty);
                 LeftCommand?.Execute(LeftCommandParameter);
             }
+            Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => { SwipeStatus = SwipeStatus.Idle; }).AsTask();
         }
 
         private void SlidableListItem_Loaded(object sender, RoutedEventArgs e)
@@ -312,10 +315,6 @@ namespace UWPSlideItem
                     }
                 }
 
-                if (_leftCommandPanel != null)
-                {
-                    _leftCommandPanel.Tapped -= _leftCommandPanel_Tapped;
-                }
 
 
                 if (_leftCommandPanel == null)
@@ -328,10 +327,6 @@ namespace UWPSlideItem
                     }
                 }
 
-                if (_rightCommandPanel != null)
-                {
-                    _rightCommandPanel.Tapped -= _rightCommandPanel_Tapped;
-                }
 
                 if (_rightCommandPanel == null)
                 {
@@ -378,7 +373,7 @@ namespace UWPSlideItem
             //    LeftCommand?.Execute(LeftCommandParameter);
             //}
 
-            Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => { SwipeStatus = SwipeStatus.Idle; }).AsTask();
+            //Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => { SwipeStatus = SwipeStatus.Idle; }).AsTask();
         }
 
         /// <summary>
@@ -408,10 +403,9 @@ namespace UWPSlideItem
                             newSwipeStatus = SwipeStatus.DisabledSwipingToRight;
                         }
 
-                        if (newTranslationX > 16)
-                        {
-                            newTranslationX = 16;
-                        }
+                        
+                        newTranslationX = 0;
+                        
                     }
                     else if (IsOffsetLimited)
                     {
@@ -449,10 +443,9 @@ namespace UWPSlideItem
                             newSwipeStatus = SwipeStatus.DisabledSwipingToLeft;
                         }
 
-                        if (newTranslationX < -16)
-                        {
-                            newTranslationX = -16;
-                        }
+                        
+                        newTranslationX = 0;
+                        
                     }
                     else if (IsOffsetLimited)
                     {
@@ -583,11 +576,13 @@ namespace UWPSlideItem
                 if (_leftCommandPanel != null)
                 {
                     _leftCommandPanel.Tapped -= _leftCommandPanel_Tapped;
+                    
                 }
 
                 if (_rightCommandPanel != null)
                 {
                     _rightCommandPanel.Tapped -= _rightCommandPanel_Tapped;
+                    
                 }
 
                 var x = _transform.TranslateX;
@@ -595,6 +590,8 @@ namespace UWPSlideItem
                 _commandContainerClipTranslateAnimation.From = 0;
                 _commandContainerClipTranslateAnimation.To = -x;
                 _contentStoryboard.Begin();
+
+                
                 return true;
             }
             return false;

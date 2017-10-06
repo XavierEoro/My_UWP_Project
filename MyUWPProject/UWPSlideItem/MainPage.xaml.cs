@@ -38,9 +38,10 @@ namespace UWPSlideItem
             }
 
             _items = items;
+            this.DataContext = this;
         }
 
-        private ObservableCollection<Item> _items;
+        public ObservableCollection<Item> _items { get; set; }
 
         private DelegateCommand<Item> _deleteItem = default(DelegateCommand<Item>);
 
@@ -54,7 +55,13 @@ namespace UWPSlideItem
 
         private void ExecuteDeleteItemCommand(Item item)
         {
+            Debug.WriteLine("command executed.");
             _items.Remove(item);
+        }
+
+        private void listView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Debug.WriteLine("item clicked.");
         }
     }
 
