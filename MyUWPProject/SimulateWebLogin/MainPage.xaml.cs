@@ -31,7 +31,7 @@ namespace SimulateWebLogin
         }
 
         HttpClient client;
-        private static Uri qiushiaddress = new Uri("https://www.qiushibaike.com");
+        private static Uri qiushiaddress = new Uri("https://www.cnblog.com");
         private static Uri qiushilogin = new Uri("https://www.qiushibaike.com/new4/session");
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {

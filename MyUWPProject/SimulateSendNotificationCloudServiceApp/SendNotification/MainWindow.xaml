@@ -1,0 +1,29 @@
+﻿<Window x:Class="SendNotification.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SendNotification"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock Text="Channel RUL"></TextBlock>
+            <TextBox x:Name="txtChannelRUL" Text="https://bn2.notify.windows.com/?token=AwYAAAB%2bAFIUEeHiN5NG5FZ74aaEcqCE0II1KyrREUhiG2ec1kH8nm%2bawZx6LzSOsJZOCmOUjtKoLk2YVrZaxh93uUQrYqro6S%2blaYtR25ceVYTf%2fGt3el67LEwS%2b8yom86BKb0%3d"></TextBox>
+            <TextBlock Text="Package Security Identifier (SID)"></TextBlock>
+            <TextBox x:Name="txtSID" Text="ms-app://s-1-15-2-233892466-3397685525-3203054955-3266348075-3405961389-908128529-465990943"></TextBox>
+            <TextBlock Text="DIY push"></TextBlock>
+            <TextBox x:Name="txtpushxmlstring" Height="150" TextWrapping="Wrap"></TextBox>
+            <ComboBox x:Name="pushtype" SelectedIndex="0">
+                <ComboBoxItem>toast</ComboBoxItem>
+                <ComboBoxItem>tile</ComboBoxItem>
+                <ComboBoxItem>raw</ComboBoxItem>
+                <ComboBoxItem>badage</ComboBoxItem>
+            </ComboBox>
+            <Button Content="push notification" Click="Button_Click" Margin="0 5 0 0" Width="200" HorizontalAlignment="Left"></Button>
+            <TextBox x:Name="txtresponseCode" Height="250" TextWrapping="Wrap">
+
+            </TextBox>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
