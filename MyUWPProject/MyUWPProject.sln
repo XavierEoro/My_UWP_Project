@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollViewHerder", "ScrollViewHerder\ScrollViewHerder.csproj", "{F407D7FD-586C-4C02-988D-6DEA8659F492}"
 EndProject
@@ -36,6 +36,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppZaure", "AppZaure\AppZaure.csproj", "{4150AB0A-38DF-46B0-AF9A-4811B441959D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipImage", "ClipImage\ClipImage.csproj", "{FE4807C5-F1C3-4F77-B468-472442C89A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamSockEmulateSmtp", "StreamSockEmulateSmtp\StreamSockEmulateSmtp.csproj", "{7AD116AD-1732-485A-9A0C-8980C246AE6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -361,6 +363,26 @@ Global
 		{FE4807C5-F1C3-4F77-B468-472442C89A01}.Release|x86.ActiveCfg = Release|x86
 		{FE4807C5-F1C3-4F77-B468-472442C89A01}.Release|x86.Build.0 = Release|x86
 		{FE4807C5-F1C3-4F77-B468-472442C89A01}.Release|x86.Deploy.0 = Release|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|ARM.Build.0 = Debug|ARM
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|x64.ActiveCfg = Debug|x64
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|x64.Build.0 = Debug|x64
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|x64.Deploy.0 = Debug|x64
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|x86.ActiveCfg = Debug|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|x86.Build.0 = Debug|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Debug|x86.Deploy.0 = Debug|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|Any CPU.ActiveCfg = Release|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|ARM.ActiveCfg = Release|ARM
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|ARM.Build.0 = Release|ARM
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|ARM.Deploy.0 = Release|ARM
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|x64.ActiveCfg = Release|x64
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|x64.Build.0 = Release|x64
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|x64.Deploy.0 = Release|x64
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|x86.ActiveCfg = Release|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|x86.Build.0 = Release|x86
+		{7AD116AD-1732-485A-9A0C-8980C246AE6C}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -368,5 +390,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F1DC287D-24BF-4953-A055-A3CF219D9E7A} = {F3C42D3F-D692-4F86-90FA-A9E5D54B5D18}
 		{1F543058-94BA-4C3E-85B2-AF6B479A786B} = {F3C42D3F-D692-4F86-90FA-A9E5D54B5D18}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2792E73-D86E-4E88-9983-2A72B1CB520F}
 	EndGlobalSection
 EndGlobal
