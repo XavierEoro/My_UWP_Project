@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="DiagnosticsSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DiagnosticsSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView x:Name="lv">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding Logo}" Width="64" Height="64"></Image>
+                        <TextBlock Text="{Binding ExecutableFileName}"></TextBlock>
+                        <TextBlock Text="{Binding ProcessId}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding UserTime}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding KernelTime}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding NonPagedPoolSizeInBytes}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding PagedPoolSizeInBytes}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding PeakNonPagedPoolSizeInBytes}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding BytesReadCount}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding BytesWrittenCount}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding DisplayName}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding Description}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding ExecutionState}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding EnergyQuotaState}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding CommitUsageLevel}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding CommitUsageLimit}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding TotalCommitUsage}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding PrivateCommitUsage}" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding sharedCommit}" Margin="5"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
