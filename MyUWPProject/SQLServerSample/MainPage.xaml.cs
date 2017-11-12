@@ -34,7 +34,9 @@ namespace SQLServerSample
             base.OnNavigatedTo(e);
 
             //Data Source=10.111.111.111;Initial Catalog=UWPTest;User Id=sa;Password=Password;
-            String connsql = @"Data Source=10.111.111.111;Initial Catalog=UWPTest;User Id=sa;Password=Password";
+            //Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;
+            //Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password = myPassword;
+            String connsql = @"Data Source=10.168.172.153;Initial Catalog=UWPTest;Trusted_Connection=True;";
 
             try
             {
