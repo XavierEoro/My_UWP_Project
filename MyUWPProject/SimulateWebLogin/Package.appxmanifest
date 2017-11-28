@@ -8,14 +8,14 @@
 
   <Identity
     Name="ac29a1a7-157b-43bd-8560-8e992b5b58c1"
-    Publisher="CN=v-doxie"
+    Publisher="CN=xavier"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ac29a1a7-157b-43bd-8560-8e992b5b58c1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>SimulateWebLogin</DisplayName>
-    <PublisherDisplayName>v-doxie</PublisherDisplayName>
+    <PublisherDisplayName>xavier</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

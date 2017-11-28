@@ -8,14 +8,14 @@
 
   <Identity
     Name="5c0f9549-93df-4018-bfe8-9dc4e849117e"
-    Publisher="CN=v-doxie"
+    Publisher="CN=xavier"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="5c0f9549-93df-4018-bfe8-9dc4e849117e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>AppAutoSuggestBox</DisplayName>
-    <PublisherDisplayName>v-doxie</PublisherDisplayName>
+    <PublisherDisplayName>xavier</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

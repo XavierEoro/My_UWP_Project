@@ -8,14 +8,14 @@
 
   <Identity
     Name="2bf27bbd-8ad4-4e90-a337-e368b6633f89"
-    Publisher="CN=v-doxie"
+    Publisher="CN=xavier"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="2bf27bbd-8ad4-4e90-a337-e368b6633f89" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>AppToast</DisplayName>
-    <PublisherDisplayName>v-doxie</PublisherDisplayName>
+    <PublisherDisplayName>xavier</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

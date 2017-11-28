@@ -8,14 +8,14 @@
 
   <Identity
     Name="5a859b6f-bdf4-40c4-827e-1e02526a38a8"
-    Publisher="CN=v-doxie"
+    Publisher="CN=xavier"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="5a859b6f-bdf4-40c4-827e-1e02526a38a8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>MySQL</DisplayName>
-    <PublisherDisplayName>v-doxie</PublisherDisplayName>
+    <PublisherDisplayName>xavier</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

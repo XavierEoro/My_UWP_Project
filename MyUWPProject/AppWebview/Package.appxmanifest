@@ -8,14 +8,14 @@
 
   <Identity
     Name="bcff6dd9-8c4a-4b7c-bba4-4639b3bd4a98"
-    Publisher="CN=v-doxie"
+    Publisher="CN=xavier"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="bcff6dd9-8c4a-4b7c-bba4-4639b3bd4a98" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>AppWebview</DisplayName>
-    <PublisherDisplayName>v-doxie</PublisherDisplayName>
+    <PublisherDisplayName>xavier</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
