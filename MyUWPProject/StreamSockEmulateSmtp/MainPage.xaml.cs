@@ -65,10 +65,10 @@ namespace StreamSockEmulateSmtp
                 
                 // Outlook
                 SmtpClient client = new SmtpClient(smtpServer, port,
-                                                    "xiedongwei@hotmail.com", "Xiedw123456@", ssl);
+                                                    "xavier@hotmail.com", "xxxxxxxxx", ssl);
 
-                SmtpMessage message = new SmtpMessage("xiedongwei@hotmail.com",
-                                                        "v-doxie@microsoft.com", null, "test", "this is a test message!");
+                SmtpMessage message = new SmtpMessage("xavier@hotmail.com",
+                                                        "xavier@microsoft.com", null, "test", "this is a test message!");
 
                 // adding an other To receiver
                 //message.To.Add("Eleanore.Doe@somewhere.com");
