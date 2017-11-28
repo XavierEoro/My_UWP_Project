@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="f24549fb-9b3d-4c88-b0cf-ba20cf8b0d22" Publisher="CN=v-doxie" Version="1.0.0.0" />
+  <Identity Name="f24549fb-9b3d-4c88-b0cf-ba20cf8b0d22" Publisher="CN=xavier" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="f24549fb-9b3d-4c88-b0cf-ba20cf8b0d22" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>AppMongoDB</DisplayName>
-    <PublisherDisplayName>v-doxie</PublisherDisplayName>
+    <PublisherDisplayName>xavier</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

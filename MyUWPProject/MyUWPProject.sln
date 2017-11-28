@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollViewHerder", "ScrollViewHerder\ScrollViewHerder.csproj", "{F407D7FD-586C-4C02-988D-6DEA8659F492}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticsSample", "DiagnosticsSample\DiagnosticsSample.csproj", "{917C5B2E-E03C-4A26-A42E-915A5AEB35F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQL", "MySQL\MySQL.csproj", "{A0BF6A58-2E2C-4062-87F5-FDD2E4DC3F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMongoDB", "AppMongoDB\AppMongoDB.csproj", "{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -449,6 +451,26 @@ Global
 		{A0BF6A58-2E2C-4062-87F5-FDD2E4DC3F42}.Release|x86.ActiveCfg = Release|x86
 		{A0BF6A58-2E2C-4062-87F5-FDD2E4DC3F42}.Release|x86.Build.0 = Release|x86
 		{A0BF6A58-2E2C-4062-87F5-FDD2E4DC3F42}.Release|x86.Deploy.0 = Release|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|ARM.Build.0 = Debug|ARM
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|x64.ActiveCfg = Debug|x64
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|x64.Build.0 = Debug|x64
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|x64.Deploy.0 = Debug|x64
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|x86.ActiveCfg = Debug|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|x86.Build.0 = Debug|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Debug|x86.Deploy.0 = Debug|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|Any CPU.ActiveCfg = Release|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|ARM.ActiveCfg = Release|ARM
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|ARM.Build.0 = Release|ARM
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|ARM.Deploy.0 = Release|ARM
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|x64.ActiveCfg = Release|x64
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|x64.Build.0 = Release|x64
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|x64.Deploy.0 = Release|x64
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|x86.ActiveCfg = Release|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|x86.Build.0 = Release|x86
+		{C85D70B9-DC86-4560-9C63-1AE1B0089C6A}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
