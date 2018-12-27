@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Background;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Networking.PushNotifications;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -30,6 +34,22 @@ namespace TestPushNotification
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+        }
+
+        protected override void OnBackgroundActivated(BackgroundActivatedEventArgs args)
+        {
+            base.OnBackgroundActivated(args);
+            IBackgroundTaskInstance taskInstance = args.TaskInstance;
+            ApplicationDataContainer settings = ApplicationData.Current.LocalSettings;
+            string taskName = taskInstance.Task.Name;
+
+            Debug.WriteLine("Background " + taskName + " starting...");
+
+            // Store the content received from the notification so it can be retrieved from the UI.
+            RawNotification notification = (RawNotification)taskInstance.TriggerDetails;
+            settings.Values[taskName] = notification.Content;
+
+            Debug.WriteLine("Background " + taskName + " completed!");
         }
 
         /// <summary>

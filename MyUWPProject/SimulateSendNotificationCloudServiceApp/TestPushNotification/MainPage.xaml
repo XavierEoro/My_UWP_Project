@@ -10,5 +10,8 @@
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button Content="request channel URL" Click="Button_Click" Margin="0 50 0 0"></Button>
         <TextBox x:Name="txtchannelURL"></TextBox>
+
+        <Button Content="Register Raw background task" Click="Button_Click_OutofProcess"></Button>
+        <Button Content="Regester in-process Raw background task" Click="Button_Click_InProcessTask"></Button>
     </StackPanel>
 </Page>
